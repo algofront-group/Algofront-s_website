@@ -1,9 +1,15 @@
 # Algofront SEO Implementation Report
 ## Complete SEO Optimization for algofront.in
 
+<<<<<<< HEAD
 **Date:** December 22, 2025  
 **Target Audience:** Businesses, startups, SMEs, enterprises  
 **Primary Keywords:** web design services, web development company, UI/UX design, ecommerce, SEO services, custom software  
+=======
+**Date:** November 13, 2025  
+**Target Audience:** Students seeking tech internships  
+**Primary Keywords:** tech internship, paid internship, MERN tutorial, roadmap, internship for students  
+>>>>>>> 0e0583edfe8320e7deae5273b912aff20f0e6d34
 **Domain:** algofront.in
 
 ---
@@ -12,6 +18,7 @@
 
 ### 1. **Meta Tags Optimization (ALL PAGES)**
 ✅ **Index.html** - Homepage
+<<<<<<< HEAD
 - Title: "Algofront — Web Services & Digital Solutions Company"
 - Description optimized for web services and solutions
 - Keywords: web services, web design company, web development, UI/UX, ecommerce, SEO, custom software
@@ -40,6 +47,36 @@
 ✅ **Contact.html**
 - Title: "Contact Algofront — Web Services & Solutions"
 - Project inquiry focused
+=======
+- Title: "Algofront - Tech Internships, MERN Tutorial & Roadmap for Students | Paid Internship Opportunities"
+- Description optimized for target keywords
+- Keywords: tech internship, paid internship, MERN tutorial, student internship, roadmap
+- Geo targeting: India (IN)
+- Audience: Students, College Students, Tech Learners
+
+✅ **Careers.html** - Internship Page (HIGH PRIORITY)
+- Title: "Tech Internships for Students - Paid Internship Opportunities | Algofront Careers"
+- Highly targeted for students seeking internships
+- Keywords: web development internship, MERN stack internship, software engineering internship
+
+✅ **Services.html** - MERN Tutorial Page
+- Title: "MERN Stack Tutorial & Web Development Training | Algofront Services for Students"
+- Focuses on tutorials and training
+- Keywords: MERN tutorial, React tutorial, Node.js tutorial, roadmap
+
+✅ **Testimonials.html** - Reviews & Social Proof
+- Title: "Student Success Stories - Algofront Internship Reviews | Tech Internship Testimonials"
+- Social proof for conversion
+- Keywords: internship reviews, student testimonials
+
+✅ **About.html**
+- Title: "About Algofront - Empowering Students Through Tech Internships & Tutorials"
+- Brand story and mission
+
+✅ **Contact.html**
+- Title: "Contact Algofront - Apply for Internship & Get Support"
+- Call-to-action focused
+>>>>>>> 0e0583edfe8320e7deae5273b912aff20f0e6d34
 
 ---
 
@@ -63,6 +100,7 @@
 ### 4. **Structured Data (Schema.org JSON-LD)**
 
 ✅ **Index.html:**
+<<<<<<< HEAD
 - Organization schema (professional web services company)
 - WebSite schema with search functionality
 - FAQ schema (10 questions about website costs, timelines, SEO, maintenance, redesigns, etc.)
@@ -89,6 +127,33 @@
 ✅ **Contact.html:**
 - ContactPage schema with contact information
 
+=======
+- EducationalOrganization schema
+- WebSite schema with search functionality
+- FAQ schema (5 common questions about internships, MERN, roadmap)
+- Breadcrumb schema
+
+✅ **Careers.html:**
+- JobPosting schema for "Web Development Intern - Paid Internship"
+  - Employment type: INTERN, PART_TIME
+  - Salary range: ₹3,000 - ₹10,000/month
+  - Location: India
+  - No experience required
+  - Skills: HTML, CSS, JavaScript, React, Node.js, MongoDB, Express.js, Git
+- Breadcrumb schema
+
+✅ **Services.html:**
+- Course schema for "Complete MERN Stack Development Tutorial"
+- ItemList schema for services offered
+- Educational level: Beginner to Intermediate
+- Teaches: MongoDB, Express.js, React.js, Node.js, REST APIs
+
+✅ **Testimonials.html:**
+- EducationalOrganization with AggregateRating (4.8/5)
+- Individual Review schemas for testimonials
+- Displays star ratings and review counts
+
+>>>>>>> 0e0583edfe8320e7deae5273b912aff20f0e6d34
 ---
 
 ### 5. **Technical SEO Files**
@@ -96,8 +161,13 @@
 ✅ **sitemap.xml** Created
 ```xml
 - Homepage: Priority 1.0, Weekly updates
+<<<<<<< HEAD
 - Careers: Priority 0.9, Weekly updates (Open Roles)
 - Services: Priority 0.9, Weekly updates (Web Services & Solutions)
+=======
+- Careers: Priority 0.9, Weekly updates (HIGH PRIORITY)
+- Services: Priority 0.9, Weekly updates
+>>>>>>> 0e0583edfe8320e7deae5273b912aff20f0e6d34
 - Testimonials: Priority 0.8, Monthly updates
 - About: Priority 0.7, Monthly updates
 - Contact: Priority 0.8, Monthly updates
@@ -115,6 +185,7 @@
 ### 6. **Image Alt Text Optimization**
 📌 **Action Required:** Add descriptive alt text to all images
 - Current: Basic alt="Algofront logo"
+<<<<<<< HEAD
 - Recommended: "Algofront — Web design and development company logo"
 
 ### 7. **Internal Linking Strategy**
@@ -123,12 +194,23 @@
 - Link from services page to contact: "Start your project with us"
 - Add footer links to "Portfolio" and "Case Studies"
 - Create a "Case Studies" section linking to project examples
+=======
+- Recommended: "Algofront - Paid tech internships and MERN tutorials for students"
+
+### 7. **Internal Linking Strategy**
+📌 **Recommendations:**
+- Add contextual links from homepage to careers page with anchor text: "Apply for paid tech internship"
+- Link from services page to careers: "Start your journey with our internship program"
+- Add footer links to "Internships" and "MERN Tutorial"
+- Create a "Resources" section linking to tutorials
+>>>>>>> 0e0583edfe8320e7deae5273b912aff20f0e6d34
 
 ### 8. **Content Enhancements**
 📌 **Add keyword-rich content sections:**
 
 **Homepage additions:**
 ```html
+<<<<<<< HEAD
 <section class="services-cta">
     <h2>Looking for Web Design & Development Services?</h2>
     <p>Algofront delivers custom web services: design, development, UI/UX, e‑commerce, 
@@ -140,15 +222,35 @@
     <h2>Client Success Stories & Results</h2>
     <p>See how we increased conversions and revenue for businesses</p>
     <a href="testimonials.html">Read Case Studies →</a>
+=======
+<section class="internship-cta">
+    <h2>Looking for Paid Tech Internships for Students?</h2>
+    <p>Join Algofront's internship program and gain hands-on experience in web development, 
+    MERN stack, and software engineering. Get paid while you learn!</p>
+    <a href="careers.html">View Internship Opportunities →</a>
+</section>
+
+<section class="mern-tutorial-preview">
+    <h2>Free MERN Stack Tutorial & Roadmap</h2>
+    <p>Complete roadmap for students learning MongoDB, Express.js, React, and Node.js</p>
+    <a href="services.html">Start Learning MERN Stack →</a>
+>>>>>>> 0e0583edfe8320e7deae5273b912aff20f0e6d34
 </section>
 ```
 
 **Services page additions:**
 ```html
+<<<<<<< HEAD
 <section class="process-section">
     <h2>Our Web Design & Development Process</h2>
     <div class="process-steps">
         <div>Step 1: Discovery — Understand goals and requirements</div>
+=======
+<section class="roadmap-section">
+    <h2>Complete Tech Career Roadmap for Students</h2>
+    <div class="roadmap-steps">
+        <div>Step 1: Learn HTML, CSS, JavaScript fundamentals</div>
+>>>>>>> 0e0583edfe8320e7deae5273b912aff20f0e6d34
         <div>Step 2: Master React.js for frontend development</div>
         <div>Step 3: Learn Node.js and Express.js for backend</div>
         <div>Step 4: Database with MongoDB</div>

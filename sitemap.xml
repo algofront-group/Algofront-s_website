@@ -12,7 +12,11 @@
         <priority>1.0</priority>
     </url>
     
+<<<<<<< HEAD
     <!-- Careers Page - Open Roles -->
+=======
+    <!-- Careers Page - High Priority for Students -->
+>>>>>>> 0e0583edfe8320e7deae5273b912aff20f0e6d34
     <url>
         <loc>https://algofront.in/careers.html</loc>
         <lastmod>2025-11-13</lastmod>
@@ -20,7 +24,11 @@
         <priority>0.9</priority>
     </url>
     
+<<<<<<< HEAD
     <!-- Services Page - Web Services & Solutions -->
+=======
+    <!-- Services Page - MERN Tutorials -->
+>>>>>>> 0e0583edfe8320e7deae5273b912aff20f0e6d34
     <url>
         <loc>https://algofront.in/services.html</loc>
         <lastmod>2025-11-13</lastmod>
