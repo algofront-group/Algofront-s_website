@@ -1,0 +1,32 @@
+# Robots.txt for Algofront.in
+# Optimized for search engine crawling
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow crawling of specific directories (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Allow CSS and JS for rendering
+User-agent: Googlebot
+Allow: /*.js
+Allow: /*.css
+
+# Sitemap location
+Sitemap: https://algofront.in/sitemap.xml
+
+# Crawl delay (optional, helps prevent server overload)
+Crawl-delay: 1
