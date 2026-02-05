@@ -140,9 +140,9 @@
     /* below content (hero .container uses z-index:2) */
     /* Much larger grid squares per user request. Slightly thicker, slightly stronger lines so large squares remain visible. */
     background-image:
-        linear-gradient(rgba(26, 26, 26, 0.12) 1.5px, transparent 1.5px),
-        linear-gradient(90deg, rgba(26, 26, 26, 0.12) 1.5px, transparent 1.5px);
-    background-size: 160px 160px;
+        linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
     /* quite large squares on desktop */
 }
 
@@ -571,13 +571,27 @@ nav {
 }
 
 .mobile-menu {
-    display: none;
-    background: #f5f5f5;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    display: block;
+    position: fixed;
+    top: 99px;
+    /* Height of header */
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+    opacity: 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
 
 .mobile-menu.active {
-    display: block;
+    max-height: 400px;
+    opacity: 1;
 }
 
 .mobile-menu ul {
@@ -603,9 +617,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8rem 0 4rem;
+    padding: 10rem 0 6rem;
     position: relative;
     overflow: hidden;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
 }
 
 .hero-content {
@@ -664,9 +679,10 @@ nav {
 }
 
 .hero-title {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1.1;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
@@ -1197,21 +1213,37 @@ footer {
         display: flex;
     }
 
+    .hero {
+        padding: 6rem 0 2rem;
+        align-items: flex-start;
+        text-align: left;
+    }
+
     .hero-content {
-        padding: 0 1rem;
+        align-items: flex-start;
+        padding: 0 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        text-align: left;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    #typing-effect {
+        text-align: left !important;
+        font-size: 1.125rem !important;
+        margin-top: 1rem !important;
+        justify-content: flex-start !important;
     }
 
     .services-list {
-        flex-wrap: wrap;
-        gap: 1rem;
-        font-size: 0.8rem;
-        justify-content: center;
-        margin-top: 2rem;
-    }
-
-    .hero {
-        padding: 7rem 0 3rem;
-        min-height: auto;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 0.75rem 1.25rem;
     }
 
     /* Adjust margins for mobile readability */
@@ -1250,45 +1282,7 @@ footer {
         font-size: 1rem;
     }
 
-    /* Position mobile menu as an overlay/dropdown under the fixed header */
-    .mobile-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        display: none;
-        /* default hidden, toggled via .active */
-        z-index: 999;
-        /* sit under header but above page content */
-        background: #ffffff;
-        /* match header/background */
-        border-top: 1px solid rgba(0, 0, 0, 0.08);
-    }
 
-    .mobile-menu.active {
-        display: block;
-    }
-
-    .mobile-menu .container {
-        padding: 1rem 1.25rem;
-    }
-
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 0.5rem 0;
-    }
-
-    .mobile-menu a {
-        color: var(--text-secondary);
-        padding: 0.75rem 0;
-        display: block;
-    }
-
-    .mobile-menu a:hover {
-        color: var(--text);
-    }
 }
 
 :root {
