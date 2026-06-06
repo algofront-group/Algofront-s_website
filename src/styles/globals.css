@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --cream: #FAFAF7;
+    --cream-100: #F5F4EE;
+    --cream-200: #EDEAE0;
+    --ink-900: #0F0F0F;
+    --ink-700: #2D2D2D;
+    --ink-500: #6B6B6B;
+    --lime: #C8F04A;
+    --lime-dark: #A8D030;
+    --amber: #F5A623;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--cream);
+    color: var(--ink-900);
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: var(--lime);
+    color: var(--ink-900);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .grain-overlay {
+    position: relative;
+  }
+
+  .grain-overlay::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  }
+
+  .section-pad {
+    @apply py-24 md:py-32;
+  }
+
+  .container-pad {
+    @apply px-5 md:px-10 lg:px-20 max-w-7xl mx-auto;
+  }
+
+  .tag-pill {
+    @apply inline-flex items-center gap-2 text-xs font-mono font-medium tracking-widest uppercase 
+           border border-ink-700/20 rounded-full px-4 py-2 text-ink-600 bg-white/60 backdrop-blur-sm;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-ink-900 text-cream-50 font-body font-medium 
+           px-7 py-3.5 rounded-full hover:bg-ink-700 transition-all duration-300 
+           hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .btn-lime {
+    @apply inline-flex items-center gap-2 bg-lime-accent text-ink-900 font-body font-semibold 
+           px-7 py-3.5 rounded-full hover:bg-lime-dark transition-all duration-300 
+           hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-ink-900 text-ink-900 font-body font-medium 
+           px-7 py-3.5 rounded-full hover:bg-ink-900 hover:text-cream-50 transition-all duration-300;
+  }
+
+  .card-glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/80 rounded-2xl;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  }
+
+  .card-outline {
+    @apply border border-ink-900/10 rounded-2xl bg-cream-50 hover:border-ink-900/20 transition-all duration-300;
+  }
+
+  .text-display {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--ink-700);
+  border-radius: 3px;
+}
+
+/* Ticker animation */
+.ticker-wrap {
+  overflow: hidden;
+}
+.ticker-inner {
+  display: flex;
+  width: max-content;
+  animation: ticker 35s linear infinite;
+}
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
