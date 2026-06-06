@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../assets/images/logo.png';
 
 const navLinks = [
   { label: 'Services', href: '#services' },
@@ -33,9 +34,7 @@ export default function Navbar() {
         <div className="container-pad flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-ink-900 rounded-lg flex items-center justify-center">
-              <span className="text-lime-accent font-mono font-bold text-sm">B</span>
-            </div>
+            <img src={logo} alt="logo" className="w-8 h-8 object-contain" />
             <span className="font-display font-bold text-xl text-ink-900 tracking-tight">
               algofront
             </span>

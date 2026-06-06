@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import logo from '../assets/images/logo.png';
 
 const footerLinks = {
   Services: ['MVP Development', 'SaaS Development', 'Custom Software', 'Automation', 'APIs'],
@@ -16,9 +17,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="max-w-xs">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-lime-accent rounded-lg flex items-center justify-center">
-                <span className="text-ink-900 font-mono font-bold text-sm">B</span>
-              </div>
+              <img src={logo} alt="logo" className="w-8 h-8 object-contain" />
               <span className="font-display font-bold text-xl text-cream-50">algofront</span>
             </div>
             <p className="text-sm text-white/50 leading-relaxed mb-6">
