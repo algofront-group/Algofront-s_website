@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className="container-pad flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <img src={logo} alt="logo" className="w-8 h-8 object-contain" />
+            <img src={logo} alt="logo" className="w-16 h-16 object-contain" />
             <span className="font-display font-bold text-xl text-ink-900 tracking-tight">
               algofront
             </span>

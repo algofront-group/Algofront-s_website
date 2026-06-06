@@ -17,7 +17,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="max-w-xs">
             <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="logo" className="w-8 h-8 object-contain" />
+              <img src={logo} alt="logo" className="w-16 h-16 object-contain" />
               <span className="font-display font-bold text-xl text-cream-50">algofront</span>
             </div>
             <p className="text-sm text-white/50 leading-relaxed mb-6">
@@ -25,15 +25,14 @@ export default function Footer() {
             </p>
             {/* Social */}
             <div className="flex gap-3">
-              {['𝕏', 'in', '⬛'].map((icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-9 h-9 rounded-lg border border-white/15 flex items-center justify-center text-xs text-white/50 hover:border-lime-accent hover:text-lime-accent transition-all duration-200"
-                >
-                  {icon}
-                </a>
-              ))}
+              <a
+                href="https://www.linkedin.com/company/thealgofront/posts/?feedView=all&viewAsMember=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-lg border border-white/15 flex items-center justify-center text-xs text-white/50 hover:border-lime-accent hover:text-lime-accent transition-all duration-200"
+              >
+                in
+              </a>
             </div>
           </div>
 
